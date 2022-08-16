@@ -1,1 +1,1 @@
-web: node . -p $PORT
+web: node . 
