@@ -1,0 +1,21 @@
+    <div class="addSong">
+        <form method="POST">
+          <input type="text" name="song_Name" placeholder="Artist - Song" />
+          <input type="text" name="song_Album" placeholder="Album" />
+          <button type="submit" class="submit">submit</button>
+        </form>
+      </div>
+
+
+<ul>
+    {{#each songs}}
+        <li>
+                <strong>#{{id}}</strong>
+                <span>{{song_Name}}, </span>
+                <span>{{song_Album}}</span>
+                <a
+                  href="/delete/{{id}}">Istrinti</a>
+                <a href="/edit/{{id}}">Redaguoti</a>
+        </li>
+    {{/each}}
+</ul>
